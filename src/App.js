@@ -1,7 +1,7 @@
 const React = require('react')
 const ReactDOM = require('react-dom')
 
-const squareStyle = {
+const squareStyle = () => {
     'width':'60px',
     'height':'60px',
     'backgroundColor': '#ddd',
