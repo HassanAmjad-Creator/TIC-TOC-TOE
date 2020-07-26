@@ -235,7 +235,7 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nconst ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nconst App = () => {\n  const onBtnClick = () => {\n    alert('hello world');\n  };\n\n  return /*#__PURE__*/React.createElement(\"button\", {\n    onClick: onBtnClick\n  }, \"click me please!\");\n};\n\nif (typeof document === \"undefined\") {\n  module.exports = App;\n} else {\n  ReactDOM.hydrate( /*#__PURE__*/React.createElement(App, null), document.getElementById(\"root\"));\n}\n\n//# sourceURL=webpack:///./src/App.js?");
+eval("const React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nconst ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nconst squareStyle = {\n  'width': '60px',\n  'height': '60px',\n  'backgroundColor': '#ddd',\n  'margin': '4px',\n  'display': 'flex',\n  'justifyContent': 'center',\n  'alignItems': 'center',\n  'fontSize': '20px',\n  'color': 'white'\n};\n\nconst App = () => {\n  const onBtnClick = () => {\n    alert('hello world');\n  };\n\n  return /*#__PURE__*/React.createElement(\"button\", {\n    onClick: onBtnClick\n  }, \"click me please!\");\n};\n\nif (typeof document === \"undefined\") {\n  module.exports = App;\n} else {\n  ReactDOM.hydrate( /*#__PURE__*/React.createElement(App, null), document.getElementById(\"root\"));\n}\n\n//# sourceURL=webpack:///./src/App.js?");
 
 /***/ })
 
