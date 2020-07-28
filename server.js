@@ -2,7 +2,7 @@ const express = require ('express')
 const app = express()
 const ReactDOMServer = require ("react-dom/server");
 const App = require('./dist/index')
-const square = require ('./src/square')
+const Square = require ('./src/Square')
 
 app.use(express.static('dist'))
 
