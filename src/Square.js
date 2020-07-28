@@ -54,7 +54,7 @@ class Square extends React.Component {
   render() {
     return (
       <div
-        className="square"
+        className="Square"
         style={squareStyle}>
       </div>
     );
