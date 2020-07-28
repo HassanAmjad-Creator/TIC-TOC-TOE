@@ -4,8 +4,7 @@ const config = {
     target:'node',
     mode:'development',
     entry: {
-        index:'./src/App.js',
-        index:'./src/Square.js'
+        index:'./src/App.js'
     },
     output:{
         path: path.resolve( __dirname, './dist'),
