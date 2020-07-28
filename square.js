@@ -107,4 +107,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-module.exports = square 
+module.exports = Square 
