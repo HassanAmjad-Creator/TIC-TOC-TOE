@@ -1,7 +1,7 @@
 const React = require('react')
 const ReactDOM = require('react-dom')
-const Square = require ('./src/Square')
- 
+const Square = require ('Square');
+
 const App = () => {
     const onBtnClick = () => {
         alert('hello world');
