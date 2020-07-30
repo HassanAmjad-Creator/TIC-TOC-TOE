@@ -1,6 +1,6 @@
 const React = require('react')
 const ReactDOM = require('react-dom')
-import Square from './Square'
+const Square = require ('./Square');
 
 const App = () => {
     const onBtnClick = () => {
@@ -18,7 +18,7 @@ const App = () => {
     }
 
     if (typeof document === "undefined") {
-        export default App 
+        module.export = App 
     } else {
         ReactDOM.hydrate(<App/>,document.getElementById("root"));
     }

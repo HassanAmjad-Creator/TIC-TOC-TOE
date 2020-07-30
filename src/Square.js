@@ -1,4 +1,4 @@
-import React from 'react';
+const React = require('react');
 import ReactDOM from 'react-dom';
 
 const rowStyle = {
@@ -102,4 +102,4 @@ class Game extends React.Component {
   }
 }
 
-export default Square 
+module.export = Square 
