@@ -1,5 +1,4 @@
 const React = require('react');
-import ReactDOM from 'react-dom';
 
 const rowStyle = {
   display: 'flex'
