@@ -18,7 +18,7 @@ const App = () => {
     }
 
     if (typeof document === "undefined") {
-        module.export = App 
+        module.exports = App 
     } else {
         ReactDOM.hydrate(<App/>,document.getElementById("root"));
     }

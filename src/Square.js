@@ -101,4 +101,4 @@ class Game extends React.Component {
   }
 }
 
-module.export = Square 
+module.exports = Square 
