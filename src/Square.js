@@ -1,62 +1,57 @@
-const React = require('react');
+const React = require("react");
 
 const rowStyle = {
-  display: 'flex'
-}
+  display: "flex",
+};
 
 const squareStyle = {
-  'width':'60px',
-  'height':'60px',
-  'backgroundColor': '#ddd',
-  'margin': '4px',
-  'display': 'flex',
-  'justifyContent': 'center',
-  'alignItems': 'center',
-  'fontSize': '20px',
-  'color': 'white'
-}
+  width: "60px",
+  height: "60px",
+  backgroundColor: "#ddd",
+  margin: "4px",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  fontSize: "20px",
+  color: "white",
+};
 
 const boardStyle = {
-  'backgroundColor': '#eee',
-  'width': '208px',
-  'alignItems': 'center',
-  'justifyContent': 'center',
-  'display': 'flex',
-  'flexDirection': 'column',
-  'border': '3px #eee solid'
-}
+  backgroundColor: "#eee",
+  width: "208px",
+  alignItems: "center",
+  justifyContent: "center",
+  display: "flex",
+  flexDirection: "column",
+  border: "3px #eee solid",
+};
 
 const containerStyle = {
-  'display': 'flex',
-  'alignItems': 'center',
-  'flexDirection': 'column'
-}
+  display: "flex",
+  alignItems: "center",
+  flexDirection: "column",
+};
 
 const instructionsStyle = {
-  'marginTop': '5px',
-  'marginBottom': '5px',
-  'fontWeight': 'bold',
-  'fontSize': '16px',
-}
+  marginTop: "5px",
+  marginBottom: "5px",
+  fontWeight: "bold",
+  fontSize: "16px",
+};
 
 const buttonStyle = {
-  'marginTop': '15px',
-  'marginBottom': '16px',
-  'width': '80px',
-  'height': '40px',
-  'backgroundColor': '#8acaca',
-  'color': 'white',
-  'fontSize': '16px',
-}
+  marginTop: "15px",
+  marginBottom: "16px",
+  width: "80px",
+  height: "40px",
+  backgroundColor: "#8acaca",
+  color: "white",
+  fontSize: "16px",
+};
 
 class Square extends React.Component {
   render() {
-    return (
-      <div
-        className="Square"
-        style={squareStyle}>
-      </div>
-    );
+    return <div className="Square" style={squareStyle}></div>;
   }
 }
 
@@ -64,8 +59,12 @@ class Board extends React.Component {
   render() {
     return (
       <div style={containerStyle} className="gameBoard">
-        <div className="status" style={instructionsStyle}>Next player: X</div>
-        <div className="winner" style={instructionsStyle}>Winner: None</div>
+        <div className="status" style={instructionsStyle}>
+          Next player: X
+        </div>
+        <div className="winner" style={instructionsStyle}>
+          Winner: None
+        </div>
         <button style={buttonStyle}>Reset</button>
         <div style={boardStyle}>
           <div className="board-row" style={rowStyle}>
@@ -101,18 +100,16 @@ class Game extends React.Component {
   }
 }
 
-    const nextTurn = () => {
-    let begin = floor (random(available.length));
-    let spot = available.splice(begin,1)[0];
-    let i = spot [0];
-    let j = spot [1];
-    console.log (i,j);
+const nextTurn = () => {
+  let begin = floor(random(available.length));
+  let spot = available.splice(begin, 1)[0];
+  let i = spot[0];
+  let j = spot[1];
+  console.log(i, j);
 
-    board[i][j]= currentPlayer;
-    currentPlayer= random (players);
+  board[i][j] = currentPlayer;
+  currentPlayer = random(players);
 
-return (
-    nextTurn()
-)
-    }
-module.exports = Board
+  return nextTurn();
+};
+module.exports = Board;
