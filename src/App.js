@@ -1,6 +1,7 @@
 const React = require("react");
 const ReactDOM = require("react-dom");
 const Square = require("./Square");
+const Functioning = require("./Functioning");
 
 const App = () => {
   const onBtnClick = () => {

@@ -50,8 +50,11 @@ const buttonStyle = {
 };
 
 class Square extends React.Component {
-  render() {
-    return <div className="Square" style={squareStyle}></div>;
+  render()
+   {
+    return <div className="Square" style={squareStyle}> 
+    
+     </div>;
   }
 }
 
@@ -99,17 +102,5 @@ class Game extends React.Component {
     );
   }
 }
-
-const nextTurn = () => {
-  let begin = floor(random(available.length));
-  let spot = available.splice(begin, 1)[0];
-  let i = spot[0];
-  let j = spot[1];
-  console.log(i, j);
-
-  board[i][j] = currentPlayer;
-  currentPlayer = random(players);
-
-  return nextTurn();
-};
-module.exports = Board;
+   
+  module.exports = Board;
