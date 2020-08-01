@@ -1,9 +1,7 @@
 const React = require("react");
 
-const Board = require("./Square");
-
 class Clicking extends React.Component {
-handleClick (){
+handleClick () {
     <div className="Board" style={squareStyle}> 
     Board: X
      </div>;

@@ -246,7 +246,7 @@ eval("const React = __webpack_require__(/*! react */ \"./node_modules/react/inde
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nconst Board = __webpack_require__(/*! ./Square */ \"./src/Square.js\");\n\nclass Clicking extends React.Component {\n  handleClick() {\n    /*#__PURE__*/\n    React.createElement(\"div\", {\n      className: \"Board\",\n      style: squareStyle\n    }, \"Board: X\");\n  }\n\n  render() {\n    return /*#__PURE__*/React.createElement(\"div\", null, /*#__PURE__*/React.createElement(Board, {\n      onClick: this.handleClick\n    }));\n  }\n\n}\n\n//# sourceURL=webpack:///./src/Functioning.js?");
+eval("const React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nclass Clicking extends React.Component {\n  handleClick() {\n    /*#__PURE__*/\n    React.createElement(\"div\", {\n      className: \"Board\",\n      style: squareStyle\n    }, \"Board: X\");\n  }\n\n  render() {\n    return /*#__PURE__*/React.createElement(\"div\", null, /*#__PURE__*/React.createElement(Board, {\n      onClick: this.handleClick\n    }));\n  }\n\n}\n\n//# sourceURL=webpack:///./src/Functioning.js?");
 
 /***/ }),
 
