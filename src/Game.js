@@ -1,5 +1,5 @@
 const React = require("react");
-
+const ReactDOM = require ("react-dom");
 const rowStyle = {
   display: "flex",
 };
@@ -55,18 +55,52 @@ const emptyMatrix = [
     ["", "", ""],
   ];
   
-  const Square = (props) => {
-    const squareOnClick = () => {
-      props.onClick(props.rowIndex, props.colIndex);
-    };
-    return (
-      <div className="Square" onClick={squareOnClick} style={squareStyle}>
-        {props.value}
-      </div>
-    );
-  };
+  const Square = () => { 
+      return (
+        <div
+          className="square"
+          style={squareStyle}>
+        </div>
+      );
+    
+      };
   
- 
+  const Board = () => {
+      return (
+        <div style={containerStyle} className="gameBoard">
+          <div className="status" style={instructionsStyle}>Next player: X</div>
+          <div className="winner" style={instructionsStyle}>Winner: None</div>
+          <button style={buttonStyle}>Reset</button>
+          <div style={boardStyle}>
+            <div className="board-row" style={rowStyle}>
+              <Square />
+              <Square />
+              <Square />
+            </div>
+            <div className="board-row" style={rowStyle}>
+              <Square />
+              <Square />
+              <Square />
+            </div>
+            <div className="board-row" style={rowStyle}>
+              <Square />
+              <Square />
+              <Square />
+            </div>
+          </div>
+        </div>
+      );
+    }
+  
+  const Game = () =>  {
+      return (
+        <div className="game">
+          <div className="game-board">
+            <Board />
+          </div>
+        </div>
+      );
+    }
   
   module.exports = Game;
   
