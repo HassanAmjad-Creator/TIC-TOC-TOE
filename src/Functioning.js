@@ -1,16 +1,16 @@
 const React = require("react");
+const Game = require("./Game");
 
-class Clicking extends React.Component {
-handleClick () {
-    <div className="Board" style={squareStyle}> 
-    Board: X
-     </div>;
+class Functioning extends React.Component {
+  handleClick() {
+    alert('1231123');
+  }
+  render() {
+    /* Board doesn't have onClick event as onClick only available on HTML elements. */
+    return (
+        <Game onClick={this.handleClick} />
+    );
+  }
 }
-    render () {
-        return(
-            <div>
-                <Board onClick = {this.handleClick}></Board>
-            </div>
-        )
-    }
-}
+
+module.exports = Functioning;

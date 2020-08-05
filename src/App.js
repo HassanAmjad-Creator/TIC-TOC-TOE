@@ -1,16 +1,17 @@
 const React = require("react");
 const ReactDOM = require("react-dom");
-const Square = require("./Square");
-const Functioning = require("./Functioning");
+const Game = require("./Game");
 
 const App = () => {
   const onBtnClick = () => {
     alert("hello world");
   };
 
+  /* events are only available on html elements. <button is an HTML element thats why clicking on button will execute onBtnClick which has alert() */
+
   return (
     <React.Fragment>
-      <Square />
+      <Game />
       <button onClick={onBtnClick}>click me please!</button>
     </React.Fragment>
   );
